@@ -16,21 +16,29 @@ function App() {
     <Router>
       <Routes>
         <Route
-          path="/"
-          element={user ? <Home /> : <Navigate to="register" />}
+          path="/mern-netflix"
+          element={user ? <Home /> : <Navigate to="/mern-netflix/register" />}
         />
         <Route
-          path="/register"
-          element={!user ? <Register /> : <Navigate to="/" />}
+          path="/mern-netflix/register"
+          element={
+            !user ? <Register /> : <Navigate to="/mern-netflix/mern-netflix" />
+          }
         />
         <Route
-          path="/login"
-          element={!user ? <Login /> : <Navigate to="/" />}
+          path="/mern-netflix/login"
+          element={!user ? <Login /> : <Navigate to="/mern-netflix" />}
         />
         {user && (
           <>
-            <Route path="/series" element={<Home type="serie" />} />
-            <Route path="/movies" element={<Home type="movie" />} />
+            <Route
+              path="/mern-netflix/series"
+              element={<Home type="/mern-netflix/serie" />}
+            />
+            <Route
+              path="/mern-netflix/movies"
+              element={<Home type="/mern-netflix/movie" />}
+            />
           </>
         )}
         <Route path="*" element={<h1>Not found</h1>} />
