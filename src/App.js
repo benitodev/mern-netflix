@@ -16,16 +16,16 @@ function App() {
     <Router>
       <Routes>
         <Route
-          path="/mern-netflix"
+          path="/"
           element={user ? <Home /> : <Navigate to="register" />}
         />
         <Route
           path="/register"
-          element={!user ? <Register /> : <Navigate to="/mern-netflix" />}
+          element={!user ? <Register /> : <Navigate to="/" />}
         />
         <Route
           path="/login"
-          element={!user ? <Login /> : <Navigate to="/mern-netflix" />}
+          element={!user ? <Login /> : <Navigate to="/" />}
         />
         {user && (
           <>
