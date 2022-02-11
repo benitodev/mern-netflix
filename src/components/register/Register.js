@@ -49,7 +49,7 @@ const Register = () => {
             style={{ backgroundColor: "transparent" }}
             className="logo"
           />
-          <Link to="../login">
+          <Link to="../mern-netflix/login">
             <button className="sign-in">Sign in</button>
           </Link>
           {/* <Link to="login">Sign in</Link> */}

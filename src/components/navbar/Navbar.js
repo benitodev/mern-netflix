@@ -104,7 +104,7 @@ const Navbar = ({
         }
       >
         <article className="navbar-first">
-          <Link to="/">
+          <Link to="/mern-netflix">
             <img
               className="netflix-logo"
               src="https://www.svgrepo.com/show/303341/netflix-1-logo.svg"
@@ -118,7 +118,7 @@ const Navbar = ({
           </Link>
           {windowSize.width >= "800" && (
             <article className="nav-query">
-              <Link to="/">
+              <Link to="/mern-netflix">
                 <img
                   onClick={() => {
                     setGohome(true);
@@ -153,13 +153,13 @@ const Navbar = ({
                   </>
                 ) : (
                   <>
-                    <Link to="/">
+                    <Link to="/mern-netflix">
                       <span>Home</span>
                     </Link>
-                    <Link to="/series">
+                    <Link to="/mern-netflix/series">
                       <span>Series</span>
                     </Link>
-                    <Link to="/movies">
+                    <Link to="/mern-netflix/movies">
                       <span>Movies</span>
                     </Link>
                     <div>

@@ -99,7 +99,7 @@ const Featured = ({
           </>
         ) : (
           <>
-            <Link to="/series">
+            <Link to="/mern-netflix/series">
               <span
                 style={{
                   backgroundColor: "#00000096",
@@ -110,7 +110,7 @@ const Featured = ({
                 Series
               </span>
             </Link>
-            <Link to="/movies">
+            <Link to="/mern-netflix/movies">
               <span
                 style={{
                   backgroundColor: "#00000096",
