@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mern-netflix/static/css/main.78f19c35.css",
-    "main.js": "/mern-netflix/static/js/main.a37e7bba.js",
+    "main.js": "/mern-netflix/static/js/main.c671a3a8.js",
     "static/js/787.db8c6a32.chunk.js": "/mern-netflix/static/js/787.db8c6a32.chunk.js",
     "index.html": "/mern-netflix/index.html",
     "main.78f19c35.css.map": "/mern-netflix/static/css/main.78f19c35.css.map",
-    "main.a37e7bba.js.map": "/mern-netflix/static/js/main.a37e7bba.js.map",
+    "main.c671a3a8.js.map": "/mern-netflix/static/js/main.c671a3a8.js.map",
     "787.db8c6a32.chunk.js.map": "/mern-netflix/static/js/787.db8c6a32.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.78f19c35.css",
-    "static/js/main.a37e7bba.js"
+    "static/js/main.c671a3a8.js"
   ]
 }
