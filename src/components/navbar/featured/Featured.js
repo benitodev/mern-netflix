@@ -21,7 +21,7 @@ const Featured = ({
     try {
       const getRandom = async () => {
         const res = await axios.get(
-          `http://localhost:3001/api/movies/random?type=${type}`,
+          `https://immense-chamber-40390.herokuapp.com/api/movies/random?type=${type}`,
           {
             headers: {
               token:

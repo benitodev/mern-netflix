@@ -20,7 +20,7 @@ const Home = ({ type }) => {
   useEffect(() => {
     const callCategories = async () => {
       const res = await axios.get(
-        "http://localhost:3001/api/lists/categories",
+        "https://immense-chamber-40390.herokuapp.com/api/lists/categories",
         {
           headers: {
             token:
@@ -42,9 +42,9 @@ const Home = ({ type }) => {
     const getRandomLists = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:3001/api/lists${type ? "?type=" + type : ""}${
-            selectGenre ? "?genre=" + selectGenre : ""
-          } `,
+          `https://immense-chamber-40390.herokuapp.com/api/lists${
+            type ? "?type=" + type : ""
+          }${selectGenre ? "?genre=" + selectGenre : ""} `,
           {
             headers: {
               token:
@@ -67,13 +67,16 @@ const Home = ({ type }) => {
     const getRandomLists = async () => {
       try {
         if (goHome) {
-          const res = await axios.get("http://localhost:3001/api/lists", {
-            headers: {
-              token:
-                "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYmVuaXRva2EiLCJpZCI6IjYxZGM4MDUyZTM0OWMwODkxZDY5MThmYyIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0MTg2NzE1Mn0.QbA5zncaHuO_Smmqf19A6aDpoaF1f5HNTm6QnA_iYdY",
-              "Access-Control-Allow-Origin": "*",
-            },
-          });
+          const res = await axios.get(
+            "https://immense-chamber-40390.herokuapp.com/api/lists",
+            {
+              headers: {
+                token:
+                  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYmVuaXRva2EiLCJpZCI6IjYxZGM4MDUyZTM0OWMwODkxZDY5MThmYyIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0MTg2NzE1Mn0.QbA5zncaHuO_Smmqf19A6aDpoaF1f5HNTm6QnA_iYdY",
+                "Access-Control-Allow-Origin": "*",
+              },
+            }
+          );
           setGohome(false);
           setLists(res.data);
         }

@@ -9,7 +9,7 @@ import {
 import Register from "./components/register/Register";
 import Login from "./components/login/Login";
 import AuthContext from "./context/AuthContext";
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 function App() {
   const { user } = useContext(AuthContext);
   return (

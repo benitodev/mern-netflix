@@ -24,11 +24,14 @@ const Register = () => {
   const handleFinish = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3001/api/auth/register", {
-        username,
-        email,
-        password,
-      });
+      await axios.post(
+        "https://immense-chamber-40390.herokuapp.com/api/auth/register",
+        {
+          username,
+          email,
+          password,
+        }
+      );
 
       navigate("/login", { replace: true });
     } catch (error) {

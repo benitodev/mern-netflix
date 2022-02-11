@@ -8,7 +8,7 @@ const ListItem = ({ movie, modalClick }) => {
     const getMovies = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:3001/api/movies/${movie}
+          `https://immense-chamber-40390.herokuapp.com/api/movies/${movie}
             `,
           {
             headers: {

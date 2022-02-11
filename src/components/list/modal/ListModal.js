@@ -23,7 +23,7 @@ const ListModal = ({ modalRef, modalLgRef, click, id }) => {
       const getMovie = async () => {
         try {
           const res = await axios.get(
-            `http://localhost:3001/api/movies/${id}
+            `https://immense-chamber-40390.herokuapp.com/api/movies/${id}
             `,
             {
               headers: {
