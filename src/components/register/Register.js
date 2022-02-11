@@ -33,7 +33,7 @@ const Register = () => {
         }
       );
 
-      navigate("/login", { replace: true });
+      navigate("/mern-netflix/login", { replace: true });
     } catch (error) {
       console.log(error);
     }
