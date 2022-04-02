@@ -21,8 +21,8 @@ Technologies used:
 
 ## Project photos
 
-[IMAGE_DESKTOP](/photos-md/netflix-md.PNG)
+![IMAGE_DESKTOP](/photos-md/netflix-md.PNG)
 
-[IMAGE_MOBILE](/photos-md/netflix-md-2.PNG)
+![IMAGE_MOBILE](/photos-md/netflix-md-2.PNG)
 
-[REGISTER](/photos-md/netflix-md-3.PNG)
+![REGISTER](/photos-md/netflix-md-3.PNG)
