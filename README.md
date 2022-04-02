@@ -12,3 +12,17 @@ Technologies used:
 - Node
 - Express
 - MongoDB Atlas
+
+## URL
+
+> [IMPORTANT!] > **Before i wanted to say that register and login lack a validation. Therefore, patience when registering and logging in, please. Thanks (i honestly don't like validations).**
+
+**URL:** https://benitodev.github.io/mern-netflix/
+
+## Project photos
+
+[IMAGE_DESKTOP](/photos-md/netflix-md.PNG)
+
+[IMAGE_MOBILE](/photos-md/netflix-md-2.PNG)
+
+[REGISTER](/photos-md/netflix-md-3.PNG)
